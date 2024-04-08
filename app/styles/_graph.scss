@@ -1,0 +1,136 @@
+.graph-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  width: 1280px;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    h1 {
+      text-align: center;
+      color: #f1f5f9;
+      font-size: 60px;
+    }
+    p {
+      color: #b0b0b0;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-direction: column;
+    width: 100%;
+    // height: 300px;
+    .alert {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      // max-width: 100px;
+      padding: 8px 12px;
+      gap: 8px;
+      border-radius: 12px;
+      .dot {
+        border-radius: 50% !important;
+        background-color: #fca5a5;
+        width: 8px;
+        height: 8px;
+      }
+      p {
+        font-size: 20px;
+        color: #b91c1c;
+      }
+    }
+    .success {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      // max-width: 100px;
+      padding: 8px 12px;
+
+      gap: 8px;
+      border-radius: 12px;
+      .dot {
+        border-radius: 50% !important;
+        background-color: green;
+        width: 8px;
+        height: 8px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: green;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1316px) {
+  .graph-main {
+    width: 92% !important;
+    text-align: center !important;
+
+    .content {
+      h1 {
+        font-size: 46px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+
+    .graph {
+    }
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .content {
+    // width: fit-content !important;
+    h1 {
+      font-size: 46px;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+@media screen and (max-width: 666px) {
+  .content {
+    width: 100% !important;
+    // align-items: start !important;
+    gap: 16px !important;
+
+    h1 {
+      font-size: 30px !important;
+    }
+    p {
+      // text-align: left !important;
+    }
+    //  canvas{
+    //   height: 300px !important;
+    // }
+  }
+  .success {
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .alert {
+    p {
+      font-size: 12px !important;
+    }
+  }
+}
